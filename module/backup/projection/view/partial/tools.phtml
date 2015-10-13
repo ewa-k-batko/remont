@@ -1,0 +1,68 @@
+<div class="tools"> 
+    <div class="calculate"></div>
+    <div class="start"></div>
+    <div class="end"></div>
+    <a class="reseter" href="#">start/reset pomiaru</a>
+    <a class="zoom-out" href="#">powiększ</a>
+    <a class="zoom-in" href="#">pomniejsz</a>
+    <div class="desc">Brak pomiaru, kliknij w dwóch punktach myszką w obszarze rzutu aby pomierzyć odległości i powierzchnię</div>
+
+</div>
+
+<div class="projection-nav">
+    <h4 class="tools-title"><a data-id-to-switch="nav-list" class="tools-link switcher" href="/rzut">Pokaz/Ukryj menu</a></h4>
+    <?php $this->render('common/view/nav.phtml'); ?>    
+
+</div>
+
+<div class="legend">
+
+    <a href="#"  data-id-to-switch="legend-list" class="switcher">Legenda kolorów</a>
+
+    <ul class="legend-list">
+        <li class="legend-item schody-nowe">nowe schody/strop żelbetowy</li>
+        <li class="legend-item wywietrznik">wywietrznik</li>
+        <li class="legend-item dach">dach</li> 
+        <li class="legend-item schody">schody istniejące</li>  
+        <li class="legend-item tlo">tło</li>  
+        <li class="legend-item drzwi">okna/drzwi istniejące</li> 
+        <li class="legend-item drzwi-wew">drzwi wewnętrzne istniejące</li>
+        <li class="legend-item nowe">nowe otwory, nowe ściany, daszki</li> 
+
+        <li class="legend-item sciana">ściana</li>
+
+        <li class="legend-item posadzkowe">wypełnienie podposadzkowe</li>
+        <li class="legend-item komin">komin</li>
+        <li class="legend-item ziemia">ziemia</li>
+        
+        <li>skala: 1px - 1cm</li>
+        <li>rzuty poziome: góra strony to północ</li>
+    </ul>
+
+</div>
+
+
+<!--<svg  version="1.1"
+         baseProfile="full"
+         accesskey=""
+        class="svg-grid"
+         viewBox="0 0 1320 958"
+         width="1320" 
+         height="958"
+         style="position: absolute;
+         top:0;left:0;z-index: 40;"
+         >
+<line x1="10" y1="0" x2="10" y2="958" stroke-width="1" stroke="grey"/>
+<line x1="20" y1="0" x2="20" y2="958" stroke-width="1" stroke="grey"/>-->
+
+ <script type='text/ecmascript'> 
+    <![CDATA[
+    
+    
+    console.log(window.$j);
+    
+    
+  ]]>
+  </script>   
+    
+</sgv>

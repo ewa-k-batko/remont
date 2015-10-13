@@ -1,0 +1,107 @@
+<section> 
+    <?php $this->render('projection/view/partial/tools.phtml'); ?>
+   <!-- <div class="list-switcher">
+     <a href="#" class="switcher" data-id-to-switch="lukarna-zachod">pokaż lukarna zachod</a>
+     <a href="#" class="switcher" data-id-to-switch="lukarna-srodkowa">pokaż lukarna srodkowa</a>
+     <a href="#" class="switcher" data-id-to-switch="lukarna-wschod">pokaż lukarna wschod</a>
+    </div>-->
+   <svg  version="1.1"
+         baseProfile="full"
+         accesskey=""
+        class="svg-canvas"
+         viewBox="0 0 1320 958"
+         width="1320" 
+         height="958">
+   
+<?php $this->render('projection/view/partial/style.phtml'); ?>
+   
+  
+  
+  <rect  x="0" y="0" width="1320" height="958" fill="#ccc" stroke="black"/>
+  
+  <rect  x="0" y="0" width="1320" height="428" fill="#99ccff" stroke="black"/> 
+ 
+   <rect  x="42" y="748" width="888" height="210" fill="#fff" stroke="black"/> 
+   <rect  x="972" y="748" width="310" height="210" fill="brown" stroke="black"/> 
+  
+   <rect  x="42" y="448" width="1236" height="280" fill="#fff" stroke="black"/>
+   
+   <polygon points="0,428 488.5,98 977,428" fill="#fff" stroke="black" />
+   
+     <!-- piwnica okna -->   
+    
+    <rect  x="199" y="780" width="100" height="71" fill="#ffccff" stroke="black"/>
+   <rect  x="643" y="780" width="102" height="71" fill="#ffccff" stroke="black"/>
+   
+   
+   <rect  x="1072" y="528" width="120" height="200" fill="#ffccff" stroke="black"/>
+   
+   <rect  x="974" y="430" width="350" height="70" fill="#fff" stroke="black"/>
+   
+   <!-- kominy
+   
+   <rect  x="931" y="0" width="30" height="50" fill="#666" stroke="black"/>-->
+   <rect  x="475" y="80" width="30" height="50" fill="#666" stroke="black"/> 
+
+    <!-- scianki -->
+    
+    <line x1="447" y1="448" x2="447" y2="728" stroke-width="1" stroke="black"/>
+    <line x1="475" y1="448" x2="475" y2="728" stroke-width="1" stroke="black"/>
+    
+    <line x1="447" y1="748" x2="447" y2="958" stroke-width="1" stroke="black"/>
+    <line x1="475" y1="748" x2="475" y2="958" stroke-width="1" stroke="black"/>
+    
+    <line x1="931" y1="448" x2="931" y2="728" stroke-width="1" stroke="black"/>
+    <line x1="973" y1="448" x2="973" y2="728" stroke-width="1" stroke="black"/>
+     
+     <!--okna parter -->
+     <rect  x="158" y="488" width="160" height="160" fill="#fff" stroke="black"/>    
+    <rect  x="178" y="488" width="122" height="160" fill="#ffccff" stroke="black"/>    
+    <rect  x="639" y="488" width="162" height="230" fill="#ffccff" stroke="black"/>     
+    <rect  x="639" y="648" width="162" height="70" fill="red" stroke="black"/>
+    <rect  x="178" y="648" width="122" height="70" fill="red" stroke="black"/>
+    <!-- grunt  -->
+   <polygon points="0,908 0,958 1320,958 1320,863" fill="brown" stroke="black"/>
+   
+   <rect  x="370" y="228" width="78" height="140" fill="orange"  stroke="black"/>
+   <rect  x="535" y="228" width="78" height="140" fill="orange"  stroke="black"/>
+    
+    <!-- teksty zachod--> 
+    <text x="185" y="593">h:120,w:230</text>
+   <text x="185" y="833">h:71,w:100</text>
+    
+     <!-- tekst srodek --> 
+   <text x="650" y="593">h:230x160</text>
+    <text x="650" y="833">h:71,w:102</text> 
+     <text x="260" y="340">h:330 strych</text>
+     <text x="60" y="680">h:280 parter</text>
+     <text x="60" y="880">h:210 piwnica</text>
+     <text x="1060" y="515">h:210-280 hol</text>
+     <text x="1090" y="565">h:200x120</text>
+    <text x="650" y="665">wyburzenie</text> 
+    
+     <!-- tekst stropy -->
+      <text x="425" y="445">h:~20 strop drewniany</text>
+      <text x="425" y="745">h:~20 strop Kleina</text>
+   
+    
+</svg>     
+</section>
+
+<?php $this->ob(); ?>
+<script src="/js/mig/mig.canvas.view.js"></script>
+    <script type="text/javascript">
+    // <![CDATA[
+    // 
+    // 
+        //var canv = jQuery('#canvas');
+   
+   //console.log(canv);
+   //
+   mig.canvas.view(window, {
+            
+        });
+    // ]]>
+    </script>
+    <?php $this->clean(); ?>
+    

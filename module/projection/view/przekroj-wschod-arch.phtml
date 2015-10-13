@@ -1,0 +1,110 @@
+<section> 
+<?php $this->render('projection/view/partial/tools.phtml'); ?>
+    <div class="list-switcher"> 
+     <a href="#" class="switcher" data-id-to-switch="balkon-poludnie">pokaż balkon południe</a>
+     <a href="#" class="switcher" data-id-to-switch="balkon-polnoc">pokaż balkon północ</a>
+    </div> 
+     
+   <svg  version="1.1"
+         baseProfile="full"
+         accesskey=""
+        class="svg-canvas"
+         viewBox="0 0 945 863"
+         width="945" 
+         height="863">
+<?php $this->render('projection/view/partial/style.phtml'); ?>
+  
+  <rect  x="0" y="0" width="945" height="863" fill="#ccc" stroke="black"/>
+  
+  <rect  x="0" y="0" width="945" height="428" fill="#ccffff" stroke="black"/>
+ 
+   <rect  x="42" y="748" width="860" height="115" fill="grey" stroke="black"/> 
+   
+   
+   <rect  x="42" y="448" width="860" height="280" fill="#fff" stroke="black"/> 
+   
+   
+   <polygon points="0,428 472.5,0 945,428" fill="#fff" stroke="black" />
+   
+   <polygon points="296,158 274,178 671,178 649,158" fill="red" stroke="black"/>
+   
+   
+   <!-- nowe elementy poddasze -->
+   <rect  x="0" y="178" width="42" height="250" fill="red" stroke="black"/>
+   <rect  x="0" y="218" width="42" height="210" fill="red"  stroke="black"/>
+   
+   <rect  x="0" y="218" width="42" height="210" fill="red"  stroke="black"/>
+   
+    <rect  x="0" y="498" width="42" height="230" fill="red"  stroke="black"/>
+    <rect  x="902" y="498" width="42" height="230" fill="#ffccff"  stroke="black"/>
+   
+   <rect  x="903" y="178" width="42" height="250" fill="red" stroke="black"/>   
+   <rect  x="903" y="218" width="42" height="125" fill="red"  stroke="black"/>
+   
+   
+   <rect y="498" x="902" width="90" height="70" fill="red"  stroke="black"/>
+   
+   <polygon points="0,198 0,178 296,158 286,178" fill="red" stroke="black"/>
+   
+   <!--<polygon points="0,178 276,178 352,108   160,108" fill="pink" stroke="black"/>
+   <polygon points="667,178 950,178  785,108 592,108 " fill="pink" stroke="black"/>-->
+   
+    <polygon points="647,158 669,178  950,198 950,178" fill="red" stroke="black"/>
+    
+    
+    
+    
+    <rect class="balkon-poludnie" x="310" y="218" width="90" height="160" fill="red"  stroke="black"/>
+    <rect class="balkon-polnoc" x="545" y="218" width="90" height="160" fill="red"  stroke="black"/>
+    
+   <rect  x="510" y="500" width="160" height="160" fill="red"  stroke="black"/>
+    <!-- grunt  
+   <polygon points="0,958 425,958 0,877" fill="brown" stroke="black"/>  
+   -->
+     <polygon points="0,863 945,863 945,796" fill="brown" stroke="black"/>
+    
+    <!-- tekst lawy -->   
+    <text x="270" y="780">lawy, h:~115-~67</text>
+    
+     <!-- tekst parter -->    
+    <text x="270" y="550">parter, h:280</text>
+    
+     <!-- tekst poddasze -->    
+    <text x="90" y="380">poddasze, h:250(280)</text>
+    <text x="300" y="340">h:160,w:90 x 2</text>
+    
+    <text x="820" y="580">h:230x w:90</text>
+    <text x="2" y="300">h:210x90x2</text>
+    <text x="2" y="600">h:230x90</text>
+    <text x="845" y="300">h:125x150</text>
+    <text x="130" y="140">daszek lukarna,h:~70</text>
+    
+     <!-- tekst strych -->    
+    <text x="425" y="100">strych, h:~158</text>
+     
+      <text x="425" y="175">h:~20</text>
+      <text x="425" y="445">h:~20</text>
+      <text x="425" y="745">h:~20</text>
+      
+     
+    
+</svg>     
+</section>
+
+<?php $this->ob(); ?>
+<script src="/js/mig/mig.canvas.view.js"></script>
+    <script type="text/javascript">
+    // <![CDATA[
+    // 
+    // 
+        //var canv = jQuery('#canvas');
+   
+   //console.log(canv);
+   //
+   mig.canvas.view(window, {
+            
+        });
+    // ]]>
+    </script>
+    <?php $this->clean(); ?>
+    

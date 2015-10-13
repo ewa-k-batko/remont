@@ -1,0 +1,250 @@
+@import '../bootstrap/config.less';
+@import '../bootstrap/component.less';
+@import (reference) '../partial/bit.less';
+
+.projection-page {
+
+
+    .nav {
+
+        &-link {
+            text-decoration: none; 
+            color: @c-white;
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+            }            
+        }
+
+
+    }
+    .active  {
+        background-color: @c-grey;
+    }
+    .active .nav-link {
+        color: @c-green;
+        font-weight:bold;
+        font-size: 14px;
+        text-decoration: underline;
+    }
+
+    .projection {        
+        &-nav {
+            position: absolute;
+            top: 0;
+            right:0px;
+            width: 15%;           
+            background-color: @c-brown;
+            z-index: 10;
+
+
+            .nav-list {
+                padding: 0 30px;
+                margin: 20px 0;
+            }
+            .nav-item {
+                margin: 10px 0;
+                padding:0 15px;
+                list-style-type: decimal;
+                color: @c-grey;
+
+            }
+
+        }
+
+    }
+
+    .legend {
+        position: absolute;
+        right:0;
+        top: 340px;  
+        width: 15%;
+        z-index: 30;
+        background-color: @c-white;
+
+        &-list {
+            display: none;
+        }
+
+
+        &-item {
+            margin: 10px;
+
+            &:before {
+                content:"";
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                margin-right: 10px;
+            }
+
+            &.komin:before {
+                background-color: #666;                    
+            }
+            &.ziemia:before {
+                background-color: brown;                    
+            }
+            &.sciana:before {
+                background-color: #ccc;                    
+            }
+            &.wywietrznik:before {
+                background-color: yellow;                    
+            }
+            &.schody-nowe:before {
+                background-color: #fffccc;                    
+            }
+            &.schody:before {
+                background-color: #cccfff;                    
+            }
+            &.drzwi:before {
+                background-color: #ffccff;
+            }
+            &.nowe:before {
+                background-color: red;                     
+            }
+            &.dach:before {
+                background-color: #99ccff;                     
+            }
+            &.drzwi-wew:before {
+                background-color: #ffcccc;                     
+            }
+            &.posadzkowe:before {
+                background-color: grey;                     
+            }
+            &.tlo:before {
+                background-color: #ccffff;                     
+            }
+        }
+    }
+
+
+
+    .list-switcher {
+        position: absolute;
+        top: 380px;
+        right:40px;
+        z-index: 20;
+        background-color: @c-grey;
+    }
+    .tools {
+        &-link  {
+            color:@c-white;
+            font-size: 14px;
+        }
+    }
+    .svg-canvas {
+        border: 4px solid blue;
+        position: absolute;
+        top:0;
+        left:0;
+
+    }
+    .desc,
+    .calculate {
+        position: absolute;
+
+        background-color: #fffccc;
+        .opacity(0.6);   
+        z-index: 10;
+        border: 1px solid red;
+        line-height: 60px;
+        color: blue;
+        text-align: center;
+
+        span {
+            display: block;
+            line-height: 10px;
+            font-size: 18px;
+            color: #000;
+            padding-top: 20px;
+        }
+    }
+
+    .desc {
+        width: 230px;
+        height: 140px;
+        right: 20px;
+        bottom: 170px;
+        line-height: 25px;
+        padding: 10px;
+    }
+
+    .start,
+    .end {
+        width: 5px;
+        height: 5px;
+        background-color: green;
+        position: absolute;
+        z-index: 20;
+    }
+
+    .end {
+        background-color: blue;
+    }
+
+    .zoom-in,
+    .zoom-out, 
+    .switcher,
+    .reseter {
+        font-weight: bold;
+        font-size: 15px;        
+        display: block;
+        text-decoration: none;
+        background-color: red;
+        color: #fff;
+        padding: 0 10px;
+        line-height: 25px;
+        border-radius: 5px;
+        &:hover {
+            background-color: red;
+        }
+    }
+
+
+    .reseter {        
+        position: absolute;
+        right: 60px;
+        bottom: 330px;
+    }
+
+    .zoom-in,
+    .zoom-out {
+        position: absolute;
+        top: 300px; 
+        right: 40px;
+        z-index: 40;
+    }
+
+    .zoom-in {
+        right:160px;
+    }
+    .zoom-in,
+    .zoom-out,
+    .switcher {
+        background-color: @c-green;
+        margin: 5px 0;
+    }
+
+    /*  elements common  */
+
+    .main-service-nav ,
+    .header-page,
+    .footer {
+        position: absolute;
+        right: 0;
+    }
+    .main-service-nav { 
+        bottom: 20px;
+    }
+
+    .header-page{ 
+        bottom: 50px;
+        width: 320px;
+        h1 {
+            font-size: 15px;
+        }
+    }
+    .footer {  
+        bottom: 0;
+    }
+}

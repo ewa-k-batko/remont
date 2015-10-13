@@ -1,0 +1,256 @@
+/*@import 'basic.less';*/
+/* grid */
+/* grid media */
+/*colors*/
+/*@c-gradient: #b3b3b3;*/
+/* fonts */
+/* p span a */
+/* h1 - h6 */
+/* path */
+/* do uusniecia */
+/* @todo zrobic liste */
+/* todo */
+.gallery-head {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px #666666;
+    padding: 20px;
+}
+@media only screen and (max-width:770px) {
+    .gallery-head {
+        border-radius: 0;
+        box-shadow: 0px 2px 2px 2px transparent;
+    }
+}
+.gallery-thumb {
+    background-color: #999999;
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px 2px #666666;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+}
+@media only screen and (max-width:770px) {
+    .gallery-thumb {
+        border-radius: 0;
+        box-shadow: 0px 2px 2px 2px transparent;
+    }
+}
+.gallery-list {
+    margin-top: 10px;
+}
+.gallery-item {
+    margin-bottom: 20px;
+}
+.gallery-item:child(n-5) {
+    clear: both;
+}
+.gallery-item:child(n-5) :before {
+    content: "Przykładowe lukarny";
+}
+.gallery-thumb {
+    position: relative;
+    padding-bottom: 70%;
+    overflow: hidden;
+    background-color: #999999;
+}
+.gallery-img {
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: transform 500ms ease 200ms;
+}
+.gallery-img:hover {
+    -ms-transform: scale(0.9);
+    /* IE 9 */
+    -webkit-transform: scale(0.9);
+    /* Chrome, Safari, Opera */
+    transform: scale(0.9);
+    cursor: w-resize;
+}
+.gallery-img:active {
+    -ms-transform: scale(1.8);
+    /* IE 9 */
+    -webkit-transform: scale(1.8);
+    /* Chrome, Safari, Opera */
+    transform: scale(1.8);
+    cursor: s-resize;
+}
+.gallery-page {
+    position: relative;
+    /*  elements common 
+      .main-service-nav { 
+          bottom: 100px;
+      }
+  
+      .header-page{
+          right: 20px; 
+          left: auto;
+          bottom: 50px;
+          h1 {
+              font-size: 15px;
+          }
+      }
+      .footer {
+          right: 20px; 
+          left: auto;
+      } */
+}
+.gallery-page .up-to-up {
+    /*background-color: transparent;
+          top: 140px;
+          left:0;
+          width: 100%;
+          height: 100%;
+          position: fixed;
+          padding-left: 100%;
+          overflow: hidden;
+          z-index: 20;*/
+}
+
+.screen {
+    display: none;
+    background-color: #000;
+    width: 100%;
+    height: 600px;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    left:0;
+    right:0;
+    top: 60px;
+    border:3px solid #333;
+    perspective: 800px;
+    border-width: 10px 0 10px 0;
+
+}
+
+.screen .link {   
+    left: 0;
+    width: 30%;
+    overflow: hidden;
+    opacity: 1;   
+    height: 600px;
+    margin: 0 auto; 
+    top: 0;
+    cursor: pointer; 
+    display: table-cell;
+
+    text-align: center;
+    position: absolute;   
+
+    -webkit-transition: all 0.6s ease; 
+    transition:all 0.6s ease;
+    transform: none;
+
+}
+
+.new-img {
+    
+    width:  auto;
+    height:80%;
+    vertical-align: middle;
+    margin: auto; 
+    display: inline-block;
+    border: 1px solid #333;
+      /*border-radius: 10px;
+       box-shadow: 2px 2px 2px 2px #333;
+     box-shadow: 2px 5px 0 0 #fff;*/
+}
+.screen .next,
+.screen .prev {
+    background-color: #000;
+    opacity: 0.2;
+    z-index:10;
+}
+.screen .next:hover,
+.screen .prev:hover {
+    opacity: 0.3;
+}
+.screen .current:hover:after,
+.screen .next:hover:after,
+.screen .prev:hover:before {
+    color: #666;
+    position: absolute;
+  
+   /* margin: auto;*/
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    font-family: verdana,tahoma,arial;
+    z-index: 30;
+    display: block;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    background-color: #fff;
+   border: 5px solid #666;
+    border-radius: 80px;
+cursor:pointer;
+
+transform: none;
+}
+.screen .current:hover:after {
+    content: "x";
+    top: 20px;
+    right: 20px;
+    opacity: .4;
+}
+
+.screen .next:hover:after {
+    content: ">";
+    right:20%;
+   
+    bottom:50%;
+}
+
+.screen .prev:hover:before {
+    content: "<";
+    left:20%;    
+    bottom:50%;
+}
+.screen .prev {
+    left: 0; 
+    margin: auto;
+    transform: translateX(-50px) translateY(50px) translateZ(-50px) rotateY(50deg);
+}
+.screen .current {
+    left: 30%;
+    opacity: 1;    
+    z-index:15;
+    transform: none;
+    width: 40%;
+    top: 40px;
+}
+
+.screen .next {
+    transform: translateX(50px) translateY(50px) translateZ(-50px) rotateY(-50deg);
+    left: 70%;
+}
+
+.screen .noshow {
+    width:0;
+    height:0;
+    position: absolute;
+    overflow: hidden; 
+    opacity: 0;
+}
+
+.screen .prevout {
+    opacity: 0;
+    left: -30%;
+
+}
+.screen .nextin {
+    left: 100%;
+    opacity: 0;
+}
+
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInB1YmxpYy9sZXNzL21vZHVsZS9nYWxsZXJ5Lmxlc3MiLCJwdWJsaWMvbGVzcy9wYXJ0aWFsL2JpdC5sZXNzIiwicHVibGljL2xlc3MvYm9vdHN0cmFwL2NvbXBvbmVudC5sZXNzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7OztBQU1JLFFBQUM7RUNMRCx5QkFBQTtFQUNBLGtCQUFBO0VDREEsbUNBQUE7RURHQSxhQUFBOztBQVFKO0VETkksUUFBQztJQ0dHLGdCQUFBO0lDUkosdUNBQUE7OztBRnNCQSxRQUFDO0VDdEJELHlCQUFBO0VBQ0Esa0JBQUE7RUNEQSxtQ0FBQTtFREdBLGFBQUE7RUFXQSxnQkFBQTtFQUNBLGtCQUFBOztBQUtKO0VERUksUUFBQztJQ0xHLGdCQUFBO0lDakJKLHVDQUFBOzs7QUZRQSxRQUFDO0VBQ0csZ0JBQUE7O0FBRUosUUFBQztFQUNHLG1CQUFBOztBQUNBLFFBRkgsS0FFSSxNQUFNO0VBQ0gsV0FBQTs7QUFESixRQUZILEtBRUksTUFBTSxLQUdIO0VBQ0ksU0FBUyxxQkFBVDs7QUFLWixRQUFDO0VBRUcsa0JBQUE7RUFDQSxtQkFBQTtFQUNBLGdCQUFBO0VBQ0EseUJBQUE7O0FBR0osUUFBQztFQUNHLHNCQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtFQUNBLE1BQUE7RUFBTSxTQUFBO0VBQ04sT0FBQTtFQUNBLFFBQUE7RUFDQSxZQUFBO0VBQ0Esc0NBQUE7O0FBQ0EsUUFWSCxJQVVJO0VFeEJMLGVBQWUsVUFBZjs7RUFDQSxtQkFBbUIsVUFBbkI7O0VBQ0EsV0FBVyxVQUFYO0VGd0JRLGdCQUFBOztBQUVKLFFBZEgsSUFjSTtFRTVCTCxlQUFlLFVBQWY7O0VBQ0EsbUJBQW1CLFVBQW5COztFQUNBLFdBQVcsVUFBWDtFRjRCUSxnQkFBQTs7QUFNWjtFQWFJLGtCQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBYkosYUFDSSJ9 */

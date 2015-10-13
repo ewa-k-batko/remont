@@ -1,0 +1,134 @@
+<section> 
+    <?php $this->render('projection/view/partial/tools.phtml'); ?>     
+     
+   <svg  version="1.1"
+         baseProfile="full"
+         accesskey=""
+        class="svg-canvas"
+         viewBox="0 0 968 945"
+         width="968" 
+         height="945">
+<?php $this->render('projection/view/partial/style.phtml'); ?>
+  
+  <rect  x="0" y="0" width="1320" height="945" fill="#ccc" stroke="black"/>
+  <rect  x="42" y="42" width="1236" height="861" fill="#fff" stroke="black"/>
+  
+    <!-- strop -->
+    <rect  x="42" y="42" width="882" height="420" fill="#f5f5f5" stroke="black"/>
+  
+  
+  <!-- schody -->
+  <rect  x="42" y="42" width="85" height="320" fill="#cccfff" stroke="black"/>
+ 
+  
+  <!-- sciany nosne -->
+  
+  <rect  x="42" y="462" width="884" height="28" fill="#ccc" stroke="black"/> <!-- nosna -->
+  <rect  x="446" y="489" width="28" height="416" fill="#ccc" stroke="black"/><!-- nosna ?  salon -->
+  
+  <!-- kominy -->
+  <rect  y="490" x="475" width="16" height="22" fill="#ccc" stroke="black"/>
+  
+  
+  <!-- sciany dzialowe --> 
+  
+  
+  <rect  y="42" x="604" width="12" height="420" fill="#ccc" stroke="black"/>--><!-- dzialowa lazienka -->
+  
+  <rect  y="42" x="926" width="42" height="861" fill="#ccc" stroke="black"/><!-- dzialowa kuchnia -->
+
+   
+   <!-- okna -->
+   <rect  x="105" y="0" width="95" height="42" fill="#ffccff" stroke="black"/><!-- okno sien -->
+  
+  
+   
+   
+  <rect  x="753" y="0" width="42" height="42" fill="#ffccff" stroke="black"/><!-- okno kuchnia -->
+  
+
+  
+  <rect  x="199" y="903" width="100" height="42" fill="#ffccff" stroke="black"/><!-- okno salon -->
+  
+  <rect  x="643" y="903" width="102" height="42" fill="#ffccff" stroke="black"/><!-- okno sypialnia -->
+
+  
+
+  
+   
+
+  
+  <!-- drzwi -->
+ <rect  x="0" y="360" width="42" height="96" fill="#ffccff" stroke="black"/><!-- drzwi wejsciowe -->
+   <rect  x="604" y="364" width="12" height="96" fill="#ffcccc" stroke="black"/><!-- drzwi kuchnia -->
+   
+   <rect  x="280" y="462" width="78" height="28" fill="#ffcccc" stroke="black"/><!-- drzwi salon -->
+    <rect  x="500" y="462" width="96" height="28" fill="#ffcccc" stroke="black"/><!-- drzwi sypialnia -->
+    
+    
+  <!-- stropy kleina -->
+  <rect  x="39" y="604" width="412" height="11" fill="orange" stroke="black"/>
+  <rect  x="39" y="704" width="412" height="11" fill="orange" stroke="black"/>
+  <rect  x="39" y="804" width="412" height="11" fill="orange" stroke="black"/>
+  
+  <rect  x="470" y="604" width="459" height="11" fill="orange" stroke="black"/>
+  <rect  x="470" y="704" width="459" height="11" fill="orange" stroke="black"/>
+  <rect  x="470" y="804" width="459" height="11" fill="orange" stroke="black"/>
+    
+    <!-- teksty -->
+    
+    
+    <!-- tekst sien -->    
+    <text x="140" y="30">w:96</text>
+    <text x="50" y="230">w:90/85</text>
+    <text x="60" y="80">klatka schodowa</text>
+    <text x="260" y="80">pod sień + łazienki + przedpokój</text>
+    <text x="360" y="120">562x420=23.60</text>
+    <text x="260" y="160">strop żelbetowy</text>
+    
+   
+    
+    <!-- tekst kuchnia --> 
+    <text x="735" y="35">w:42</text>
+    
+    <text x="670" y="80">pod kuchnia</text>
+    <text x="670" y="120">310x420=13.02</text>
+    
+    
+    
+    <text x="5" y="395">w:95</text>
+    <!-- tekst salon -->
+    <text x="225" y="630">strop Klein'a(teownik)</text>
+    <text x="225" y="930">w:100</text>
+    <text x="190" y="850">pod sypialnia</text>
+    <text x="190" y="880">405x416=16.85</text>
+    <text x="300" y="482">w:78</text>
+    
+     <!-- tekst sypialnia -->
+    <text x="685" y="630">teownik: w:11cm x ??</text> 
+    <text x="685" y="940">w:102</text>
+    <text x="650" y="850">pod sypialnia</text>
+    <text x="650" y="880">456x416=18.96</text>    
+    <text x="525" y="482">w:96</text>
+    
+
+</svg>     
+</section>
+
+<?php $this->ob(); ?>
+<script src="/js/mig/mig.canvas.view.js"></script>
+    <script type="text/javascript">
+    // <![CDATA[
+    // 
+    // 
+        //var canv = jQuery('#canvas');
+   
+   //console.log(canv);
+   //
+   mig.canvas.view(window, {
+            
+        });
+    // ]]>
+    </script>
+    <?php $this->clean(); ?>
+    

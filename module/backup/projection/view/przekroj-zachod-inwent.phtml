@@ -1,0 +1,80 @@
+<section> 
+    <?php $this->render('projection/view/partial/tools.phtml'); ?>
+    
+    <!--<div class="list-switcher">
+     <a href="#" class="switcher" data-id-to-switch="balkon-poludnie">pokaż balkon południe</a>
+     <a href="#" class="switcher" data-id-to-switch="balkon-polnoc">pokaż balkon północ</a>
+     <a href="#" class="switcher" data-id-to-switch="kasacja">pokaż kasacja</a>
+    </div> -->
+     
+     
+   <svg  version="1.1"
+         baseProfile="full"
+         accesskey=""
+        class="svg-canvas"
+         viewBox="0 0 945 958"
+         width="945" 
+         height="958">
+<?php $this->render('projection/view/partial/style.phtml'); ?>
+  
+  <rect  x="0" y="0" width="945" height="958" fill="#ccc" stroke="black"/>
+  <rect  x="0" y="0" width="945" height="428" fill="#ccffff" stroke="black"/>
+ 
+   <rect  x="42" y="748" width="861" height="210" fill="#fff" stroke="black"/> 
+   
+   
+   <rect  x="42" y="448" width="861" height="280" fill="#fff" stroke="black"/> 
+   
+   
+   <polygon points="0,428 472.5,0 945,428" fill="#fff" stroke="black" />
+   
+    
+    <rect class="kasacja" x="447.5" y="318" width="50" height="110" fill="#ffccff"  stroke="black"/>
+    <rect  x="425" y="763" width="95" height="195" fill="#ffccff"  stroke="black"/>
+    <!-- grunt  -->
+   <polygon points="0,958 425,958 0,877" fill="brown" stroke="black"/>  
+    <polygon points="521,958 945,958 945,908" fill="brown" stroke="black"/>
+   
+    
+    
+    
+    
+    <rect  x="462" y="448" width="28" height="280" fill="#fff" stroke="black"/>
+    
+    <!-- tekst piwnica --> 
+    <text x="425" y="900">h:195,w:95</text>
+    <text x="270" y="850">piwnica, h:210</text>
+    
+     <!-- tekst parter -->    
+    <text x="230" y="500">parter, h:280</text>
+    
+    <text x="825" y="420">kąt: <?php echo round(rad2deg(acos(472.5/640)));?></text>
+    
+     <!-- tekst poddasze -->    
+    <text x="90" y="380">strych, h:428</text>
+ 
+      <text x="425" y="445">h:~20</text>
+      <text x="425" y="745">h:~20</text>
+      
+      <text x="442" y="345">okno ~1m x 0.6</text>
+    
+</svg>     
+</section>
+
+<?php $this->ob(); ?>
+<script src="/js/mig/mig.canvas.view.js"></script>
+    <script type="text/javascript">
+    // <![CDATA[
+    // 
+    // 
+        //var canv = jQuery('#canvas');
+   
+   //console.log(canv);
+   //
+   mig.canvas.view(window, {
+            
+        });
+    // ]]>
+    </script>
+    <?php $this->clean(); ?>
+    

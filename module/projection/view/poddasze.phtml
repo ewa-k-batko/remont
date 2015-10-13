@@ -1,0 +1,55 @@
+<section> 
+    <?php $this->render('projection/view/partial/tools.phtml'); ?>
+    
+     
+      <svg  version="1.1"
+         baseProfile="full"
+         accesskey=""
+        class="svg-canvas"
+         viewBox="0 0 968 945"
+         width="968" 
+         height="945">
+<?php $this->render('projection/view/partial/style.phtml'); ?>
+  
+  <rect  x="0" y="0" width="968" height="945" fill="#ccc" stroke="black"/>
+  <rect  x="42" y="42" width="884" height="861" fill="#fff" stroke="black"/>  
+   
+ 
+   
+     <text x="50" y="72">strop drewniany</text>
+    
+     <rect x="530" y="360" width="90" height="90" fill="#fffccc" stroke="black"></rect>
+     <text x="540" y="350">schody strych</text>
+     
+     <rect id="komin" y="490" x="475" width="16" height="22" fill="#ccc" stroke="black"></rect>
+    <text x="475" y="485">komin</text> 
+     <g class="wywierzniki">
+        <rect stroke="black" fill="yellow" height="40" width="40" x="406" y="490"></rect>
+        <text x="412" y="525">CO</text> 
+
+        <rect stroke="black" fill="yellow" height="15" width="15" x="370" y="200"></rect>
+        <text x="180" y="245">WC,O2</text>
+        
+        <rect stroke="black" fill="yellow" height="15" width="15" x="158" y="232"></rect>
+        <text x="347" y="215">02</text>
+    </g>
+</svg>     
+</section>
+
+<?php $this->ob(); ?>
+<script src="/js/mig/mig.canvas.view.js"></script>
+    <script type="text/javascript">
+    // <![CDATA[
+    // 
+    // 
+        //var canv = jQuery('#canvas');
+   
+   //console.log(canv);
+   //
+   mig.canvas.view(window, {
+            
+        });
+    // ]]>
+    </script>
+    <?php $this->clean(); ?>
+    

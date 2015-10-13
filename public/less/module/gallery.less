@@ -1,0 +1,103 @@
+@import '../bootstrap/config.less';
+@import '../bootstrap/component.less';
+@import (reference) '../partial/bit.less';
+
+.gallery {
+
+    &-head{
+        &:extend(.bit-white all);
+    }
+    &-list {
+        margin-top: 10px;
+    }
+    &-item {
+        margin-bottom: 20px;
+        &:child(n-5) {
+            clear: both;
+
+            :before {
+                content: "Przykładowe lukarny"
+            }
+
+        }
+    }
+    &-thumb {
+        &:extend(.bit-grey all);
+        position: relative;
+        padding-bottom: 70%;
+        overflow: hidden;
+        background-color: @c-very-darkn-grey;
+
+    }
+    &-img {
+        vertical-align: middle;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top:0;bottom:0;
+        left:0;
+        right: 0;
+        margin: auto;
+        transition: transform 500ms ease 200ms;  
+        &:hover {
+            .scale(0.9); 
+            cursor:w-resize;
+        }
+        &:active {
+            .scale(1.8);
+            cursor: s-resize;
+        }
+    }  
+
+
+}
+.gallery-page  {
+    .up-to-up {
+        /*background-color: transparent;
+        top: 140px;
+        left:0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        padding-left: 100%;
+        overflow: hidden;
+        z-index: 20;*/
+    }
+
+    position: relative;
+
+    /*  elements common 
+    .main-service-nav { 
+        bottom: 100px;
+    }
+
+    .header-page{
+        right: 20px; 
+        left: auto;
+        bottom: 50px;
+        h1 {
+            font-size: 15px;
+        }
+    }
+    .footer {
+        right: 20px; 
+        left: auto;
+    } */
+
+    .new-img {
+        position: absolute; top: 20px; left:0; right:0; margin: auto; z-index:10; border: 20px solid #fff;
+    }
+    .new-img:before {
+        content:'zamknij'; 
+        position: absolute;
+        color: #fff;
+        top: 30px;
+        left: 30px;
+        width: 50px;
+        height: 20px;
+        line-height: 20px;
+        padding: 0 10px;
+        border: 2px solid #fff;
+        border-radius: 6px;
+    }
+}

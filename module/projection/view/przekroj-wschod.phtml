@@ -1,0 +1,133 @@
+<section> 
+<?php $this->render('projection/view/partial/tools.phtml'); ?>
+    <!--<div class="list-switcher"> 
+     <a href="#" class="switcher" data-id-to-switch="balkon-poludnie">pokaż balkon południe</a>
+     <a href="#" class="switcher" data-id-to-switch="balkon-polnoc">pokaż balkon północ</a>
+    </div> -->
+     
+   <svg  version="1.1"
+         baseProfile="full"
+         accesskey=""
+        class="svg-canvas"
+         viewBox="0 0 945 863"
+         width="945" 
+         height="863">
+<?php $this->render('projection/view/partial/style.phtml'); ?>
+  
+  <rect  x="0" y="0" width="945" height="863" fill="#ccc" stroke="black"/>
+  
+  <rect  x="0" y="0" width="945" height="428" fill="#ccffff" stroke="black"/>
+ 
+   <rect  x="42" y="748" width="860" height="115" fill="brown" stroke="black"/> 
+   
+   
+   <rect  x="42" y="448" width="860" height="280" fill="#fff" stroke="black"/> 
+   
+     
+   
+   
+ <polygon points="0,428 472.5,98 945,428" fill="#fff" stroke="black" />
+ 
+ <rect x="10" y="518" width="8" height="210" fill="#ccc" stroke="black"></rect>
+ <rect x="120" y="478" width="28" height="240" fill="#ccc" stroke="black"></rect>
+ 
+   <rect x="462" y="518" width="28" height="210" fill="#ccc" stroke="black"></rect>
+   <!--<polygon points="296,158 274,178 671,178 649,158" fill="red" stroke="black"/>-->
+   
+   <rect  x="436" y="228" width="78" height="140" fill="orange"  stroke="black"/>
+   
+   
+   <!-- nowe elementy poddasze 
+   <rect  x="0" y="178" width="42" height="250" fill="red" stroke="black"/>
+   <rect  x="0" y="218" width="42" height="210" fill="red"  stroke="black"/>
+   
+   <rect  x="0" y="218" width="42" height="210" fill="red"  stroke="black"/>
+   
+    <rect  x="0" y="498" width="42" height="230" fill="red"  stroke="black"/>
+    <rect  x="902" y="498" width="42" height="230" fill="#ffccff"  stroke="black"/>
+   
+   <rect  x="903" y="178" width="42" height="250" fill="red" stroke="black"/>   
+   <rect  x="903" y="218" width="42" height="125" fill="red"  stroke="black"/>
+   
+   
+   <rect y="498" x="902" width="90" height="70" fill="red"  stroke="black"/>
+   
+   <polygon points="0,198 0,178 296,158 286,178" fill="red" stroke="black"/>
+   
+   <polygon points="647,158 669,178  950,198 950,178" fill="red" stroke="black"/>
+   -->
+   
+   <!--<polygon points="0,178 276,178 352,108   160,108" fill="pink" stroke="black"/>
+   <polygon points="667,178 950,178  785,108 592,108 " fill="pink" stroke="black"/>-->
+   
+   <rect  x="120" y="528" width="28" height="200" fill="pink"  stroke="black"/> 
+    <rect  x="462" y="528" width="28" height="200" fill="pink"  stroke="black"/> 
+    
+    <!--<rect class="kasacja" x="447.5" y="288" width="60" height="80" fill="orange"  stroke="black"/>-->
+    
+   <rect  x="258" y="515" width="90" height="210" fill="#f5f5f5"  stroke="#ccc"/>
+    <!-- grunt  
+   <polygon points="0,958 425,958 0,877" fill="brown" stroke="black"/>  
+   -->
+     <polygon points="0,863 945,863 945,796" fill="brown" stroke="black"/>
+     
+     <polygon points="0,515 236.25,430 494,515 440,515 236.25,450 50,515" fill="#ccc" stroke="black"/>
+     
+     <rect x="464" y="748" width="42" height="130" fill="#ccc" stroke="black"></rect>
+     
+      <polygon points="480,750 480,730 580,730  580, 750    585,750 615,750 615,770    615,770 645,770 645,790  645,790 675,790 675,810 " fill="grey" stroke="black"/>
+    
+    <!-- tekst lawy -->   
+    <text x="270" y="780">fundament, h:~115-~67</text>
+    
+     <!-- tekst parter -->    
+    <text x="670" y="550">parter, h:280</text>
+    
+   <text x="60" y="600">taras</text>
+    
+   <!--  <text x="820" y="580">h:230x w:90</text>
+   <text x="2" y="300">h:210x90x2</text>-->
+    <text x="260" y="600">h:210x90</text>
+    <text x="260" y="560">drzwi do salonu</text>
+    <text x="120" y="600">h:200x120</text>
+    <text x="120" y="640">okno balkonowe</text>
+    
+    <text x="460" y="600">h:200x90</text>
+    <text x="460" y="640">drzwi wejściowe</text>
+    
+     <text x="260" y="690">hol, h: 2.80-2.10m</text>
+    
+     <text x="399" y="490">dach+sufit powieszany</text>
+      <!--<text x="845" y="300">h:125x150</text>
+   <text x="130" y="140">daszek lukarna,h:~70</text>
+    
+     tekst strych -->    
+    <text x="425" y="260">strych, h:~330</text>
+     <text x="825" y="420">kąt: <?php echo round(rad2deg(acos(472.5/580)));?></text>
+     
+     
+      <text x="425" y="445">h:~20</text>
+      <text x="425" y="745">h:~20</text>
+      
+     
+    
+</svg>     
+</section>
+
+<?php $this->ob(); ?>
+<script src="/js/mig/mig.canvas.view.js"></script>
+    <script type="text/javascript">
+    // <![CDATA[
+    // 
+    // 
+        //var canv = jQuery('#canvas');
+   
+   //console.log(canv);
+   //
+   mig.canvas.view(window, {
+            
+        });
+    // ]]>
+    </script>
+    <?php $this->clean(); ?>
+    

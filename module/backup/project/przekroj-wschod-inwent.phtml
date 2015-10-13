@@ -1,0 +1,67 @@
+<section> 
+<?php $this->render('projection/view/partial/tools.phtml'); ?>
+    <div class="list-switcher"> 
+     <a href="#" class="switcher" data-id-to-switch="balkon-poludnie">pokaż balkon południe</a>
+     <a href="#" class="switcher" data-id-to-switch="balkon-polnoc">pokaż balkon północ</a>
+    </div> 
+     
+   <svg  version="1.1"
+         baseProfile="full"
+         accesskey=""
+        class="svg-canvas"
+         viewBox="0 0 945 863"
+         width="945" 
+         height="863">
+<?php $this->render('projection/view/partial/style.phtml'); ?>
+  
+  <rect  x="0" y="0" width="945" height="863" fill="#ccc" stroke="black"/>
+  
+  <rect  x="0" y="0" width="945" height="428" fill="#ccffff" stroke="black"/>
+ 
+   <rect  x="42" y="748" width="860" height="115" fill="grey" stroke="black"/> 
+   
+   
+   <rect  x="42" y="448" width="860" height="280" fill="#fff" stroke="black"/>    
+   
+   <polygon points="0,428 472.5,0 945,428" fill="#fff" stroke="black" />
+   
+    <rect  x="902" y="518" width="42" height="210" fill="#ffccff"  stroke="black"/> 
+   
+    <!-- grunt  
+   <polygon points="0,958 425,958 0,877" fill="brown" stroke="black"/>  
+   -->
+     <polygon points="0,863 945,863 945,796" fill="brown" stroke="black"/>
+    
+    <!-- tekst lawy -->   
+    <text x="270" y="780">lawy, h:~115-~67</text>
+    
+     <!-- tekst parter -->    
+    <text x="270" y="550">parter, h:280</text>
+    
+     <!-- tekst poddasze -->    
+    <text x="90" y="380">strych, h:428</text>    
+    <text x="820" y="580">h:210x w:90</text>     
+   
+      <text x="425" y="445">h:~20</text>
+      <text x="425" y="745">h:~20</text>
+    
+</svg>     
+</section>
+
+<?php $this->ob(); ?>
+<script src="/js/mig/mig.canvas.view.js"></script>
+    <script type="text/javascript">
+    // <![CDATA[
+    // 
+    // 
+        //var canv = jQuery('#canvas');
+   
+   //console.log(canv);
+   //
+   mig.canvas.view(window, {
+            
+        });
+    // ]]>
+    </script>
+    <?php $this->clean(); ?>
+    

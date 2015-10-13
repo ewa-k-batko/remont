@@ -1,0 +1,132 @@
+<section> 
+    <?php $this->render('projection/view/partial/tools.phtml'); ?>
+   <!-- <div class="list-switcher">
+      <a href="#" class="switcher" data-id-to-switch="lukarna">pokaż lukarna</a>
+    </div>-->
+   <svg  version="1.1"
+         baseProfile="full"
+         accesskey=""
+        class="svg-canvas"
+         viewBox="0 0 1320 958"
+         width="1320" 
+         height="958">
+<?php $this->render('projection/view/partial/style.phtml'); ?>
+  
+  <rect  x="0" y="0" width="1320" height="958" fill="#ccc" stroke="black"  />
+  
+  <rect  x="0" y="0" width="1320" height="428" fill="#f5f5f5" stroke="black"/> 
+ 
+   <rect  x="394" y="748" width="888" height="210" fill="#fff" stroke="black"/> 
+   
+   <rect  x="42" y="748" width="310" height="210" fill="grey" stroke="black"/>  
+   
+   <rect  x="42" y="448" width="1236" height="280" fill="#fff" stroke="black"/>
+   
+     <!-- piwnica okna -->
+    
+    <rect  x="525" y="760" width="42" height="51" fill="#ffccff" stroke="black"/>
+    <rect  x="1124" y="760" width="95" height="65" fill="#ffccff" stroke="black"/>   
+    
+    <!-- okna strych -->   
+   <rect  x="740" y="30" width="50" height="50" fill="#ffccff" stroke="black"/>
+   
+   <g class="ganek">
+   <rect  x="975" y="730" width="30" height="202" fill="#ccc" stroke="black"/>   
+   <rect  x="1178" y="730" width="30" height="202" fill="#ccc" stroke="black"/>
+  <rect  x="968" y="730" width="246" height="20" fill="#ccc" stroke="black"/>
+  <polygon class="steps" points="787,858 970,858  970,730" fill="#cccfff" stroke="black"/>  
+  
+  <rect  x="970" y="476" width="242" height="2" fill="#fff" stroke="black"/>
+  <rect  x="970" y="478" width="2" height="250" fill="#fff" stroke="black"/>
+  <rect  x="1210" y="478" width="2" height="250" fill="#fff" stroke="black"/>
+  <rect  x="970" y="448" width="242" height="30" fill="#fff" stroke="black"/>  
+  </g> 
+    
+    <!-- sciani parter -->
+    <g class="scianki"> 
+   <line x1="352" y1="448" x2="352" y2="728" stroke-width="1" stroke="black"/>
+    <line x1="394" y1="448" x2="394" y2="728" stroke-width="1" stroke="black"/>    
+    
+    <line x1="704" y1="448" x2="704" y2="728" stroke-width="1" stroke="black"/>
+    <line x1="716" y1="448" x2="716" y2="728" stroke-width="1" stroke="black"/>
+    
+    <line x1="862" y1="448" x2="862" y2="728" stroke-width="1" stroke="black"/>
+    <line x1="874" y1="448" x2="874" y2="728" stroke-width="1" stroke="black"/>
+    
+    <line x1="1068" y1="448" x2="1068" y2="728" stroke-width="1" stroke="black"/>
+    <line x1="1080" y1="448" x2="1080" y2="728" stroke-width="1" stroke="black"/>    
+    
+    <line x1="704" y1="748" x2="704" y2="958" stroke-width="1" stroke="black"/>
+    <line x1="716" y1="748" x2="716" y2="958" stroke-width="1" stroke="black"/>
+    </g> 
+    
+     <rect  x="1084" y="517" width="96" height="210" fill="#ffccff"  stroke="black"/>
+   <rect  x="173" y="628" width="95" height="210" fill="#ffccff"  stroke="black"/>
+    
+    <!-- grunt  -->
+   <polygon points="0,815 0,958 1320,958 1320,860" fill="brown" stroke="black"/> 
+  
+    <rect  x="487" y="488" width="122" height="160" fill="#ffccff" stroke="black"/>
+    
+    <rect  x="778" y="488" width="55" height="160" fill="#ffccff" stroke="black"/>
+    <rect  x="900" y="488" width="55" height="160" fill="#ffccff" stroke="black"/>
+    <!-- kominy -->
+   
+   <rect  x="808" y="0" width="30" height="50" fill="#666" stroke="black"/>
+   <rect  x="352" y="0" width="30" height="50" fill="#666" stroke="black"/>   
+    <rect  x="716" y="110" width="30" height="50" fill="#666" stroke="black"/>   
+    
+  <text x="875" y="816">kąt: <?php echo round(rad2deg(atan(105/185)));?>, h:105,w:185</text>
+    
+   
+    
+    <!-- tekst piwnica --> 
+    <text x="179" y="593">h:210,w:95</text>
+    <text x="1082" y="593">h:210,w:95</text>
+    
+    <text x="482" y="593">h:160(155),w:150</text>
+    <text x="782" y="563">h:160(155),w:55</text>
+    <text x="909" y="593">h:160(155),w:55</text>
+    
+     <text x="1082" y="745">w:246x190</text>
+    
+    <text x="720" y="770">piwnica, h:210</text>
+    
+    <text x="500" y="810">w:42, h:51</text>
+    <text x="1082" y="810">w:95, h:65</text>
+    
+     <!-- tekst parter -->    
+    <text x="80" y="500">parter, h:280</text>
+    
+     <!-- tekst poddasze -->  
+     
+     <text x="80" y="380">h:428 strych</text>
+     
+     <text x="10" y="580">cegła+ubijany hash</text>
+     <text x="690" y="580">cegła</text>
+    
+     <!-- tekst strych -->      
+      <text x="425" y="445">h:~20 strop drewniany</text>
+      <text x="425" y="745">h:~20 strop żelbetowy</text>
+   
+    
+</svg>     
+</section>
+
+<?php $this->ob(); ?>
+<script src="/js/mig/mig.canvas.view.js"></script>
+    <script type="text/javascript">
+    // <![CDATA[
+    // 
+    // 
+        //var canv = jQuery('#canvas');
+   
+   //console.log(canv);
+   //
+   mig.canvas.view(window, {
+            
+        });
+    // ]]>
+    </script>
+    <?php $this->clean(); ?>
+    

@@ -1,0 +1,54 @@
+<section class="contact">
+    <h1 class="head-title">Kontakt :</h1>    
+
+    <div class="contact-maps">
+        
+        <h4 class="aside-title hide js-map-title-company">Lokalizacja  Pawlikowice </h4>
+       <iframe class="map-body hide js-map-company"></iframe> 
+       
+       <br/><br/><br/>
+        <h4 class="aside-title hide js-map-title-company">Opis dojazdu </h4>
+        
+        <p>Poniżej są mapki ich numery wskazujące w jakiej kolejności je oglądać.</p><br/>
+
+<p>Kierunek Wieliczka, wjazd do Wieliczki po prawej stronie szosy są dwie stacje benzynowe , za pierwszą stacją benzynową jedziemy prosto (wyjazd na lewo to obwodnica a4).<br/><br/>
+Za drugą stacją benzynową na skrzyżowaniu skręcamy lekko na prawo, <br/>przejeżdżamy przez centrum Wieliczki jadąc cały czas za drogą główną aż do skrzyżowania na Gdów i Dobczyce, które obecnie jest w remoncie ,<br>
+musimy więc objechać to skrzyżowanie obwodnicą skręcając przed "obszarem w remonciem" na prawo a  po paruset metrach skręcając na lewo i znowu po paruset metrach na prawo, wyjeżdżamy w ten sposób w ulicę Dobczycką. <br/>
+jedziemy dalej w kierunku Dobczyc, <br/>jedziemy znowu cały czas za drogą główną (ul. Dobczycka) aż do skrzyżowania na Rożnowej.</p> 
+<br/><br/>
+      <p>      Na skrzyżowaniu(rondzie) na Rożnowej jedziemy prawie prosto do góry w kierunku Dobczyc(Dziekanowic), po niecałym około 1km po prawej stronie drogi jest tablica miejscowości Pawlikowice,<br/>
+<br/>Za następnymi około 200m po prawej stronie szosy jest zatoczka dla busów<br/>
+zaraz za nią skręcamy na prawo, jest  to wjazd asfaltowy z szosy, po lewej stronie tej asfaltowej drogi piąty 'różowy' dom to dom do remontu. </p>
+        </p>
+        
+    <br/><br/>    
+       
+        
+        <ul>
+            <li><img width="600" src="/img/mapa-pawlikowice-1.gif"/><br/><br/>1.wjazd do Wieliczki<br/><br/></li>
+             <li><img width="600" src="/img/mapa-pawlikowice-2.gif"/><br/><br/>2.przejazd przez centrum Wieliczki<br/><br/></li>
+              <li><img width="600" src="/img/mapa-pawlikowice-3.gif"/><br/><br/>3.wyjazd z Wieliczki<br/><br/></li>
+               <li><img width="600" src="/img/mapa-pawlikowice-4.gif"/><br/><br/>4.wjazd do Pawlikowic<br/><br/></li>
+        </ul>
+        
+    </div>
+</section>
+
+<?php $this->ob(); ?>
+<script src="/js/mig/mig.map.google.js"></script>
+<script type="text/javascript">
+// <![CDATA[
+    mig.map.google(window, {
+        list: [
+            
+            { 
+                src: 'https://www.google.com/maps/embed/v1/place?q=49.965877%2C%2020.055552&key=AIzaSyDqBXYMbnEMms6qKZiLmIEBnGtF5SVH6Vs',
+                name: 'company'
+            }
+        ],
+        limitDevice: 800,
+        width: 600
+    });
+// ]]>
+</script>
+<?php $this->clean();?>
